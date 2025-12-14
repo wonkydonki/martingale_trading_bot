@@ -125,7 +125,3 @@ Two Jupyter notebooks are included for testing, but not visible as per .gitignor
 - **alpaca.ipynb**: Test Alpaca API connections and order placement
 - **openai.ipynb**: Test OpenAI integration and prompt engineering
 
-## Disclaimer
-
-This software is for educational purposes only. Trading cryptocurrencies and stocks involves risk. Always test with paper trading first. The authors are not responsible for any financial losses incurred through the use of this software.t
-
