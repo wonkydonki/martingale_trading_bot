@@ -2,7 +2,7 @@
 
 An intelligent trading bot built with Python and Tkinter that implements a Martingale-style Dollar Cost Averaging (DCA) strategy for equity trading through the Alpaca API. Features an integrated AI assistant powered by OpenAI for portfolio analysis and insights.
 
-## 🚀 Features
+## Features
 
 - **GUI-Based Trading Interface**: User-friendly desktop application built with Tkinter
 - **Martingale DCA Strategy**: Automated buying at predetermined drawdown levels
@@ -12,13 +12,13 @@ An intelligent trading bot built with Python and Tkinter that implements a Marti
 - **Auto-Refresh System**: Background thread continuously monitors and executes trades
 - **Persistent Data Storage**: Save and load equity configurations via JSON
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.7 or higher
 - Alpaca Paper Trading Account ([Sign up here](https://alpaca.markets/))
 - OpenAI API Key ([Get one here](https://platform.openai.com/))
 
-## 🔧 Installation
+## Installation
 
 1. **Clone the repository**
    ```bash
@@ -49,7 +49,7 @@ An intelligent trading bot built with Python and Tkinter that implements a Marti
    OPENAI_API_KEY = "your_openai_key_here"
    ```
 
-## 🎯 Usage
+## Usage
 
 1. **Run the application**
    ```bash
@@ -71,7 +71,7 @@ An intelligent trading bot built with Python and Tkinter that implements a Marti
    - Type questions about your portfolio in the chat box
    - Get insights on risk exposure, diversification, and market outlook
 
-## 📊 How the Martingale Strategy Works
+## How the Martingale Strategy Works
 
 1. **Initial Entry**: Bot places a market order when you activate an equity
 2. **Level Calculation**: Calculates buy prices at specified drawdown intervals
@@ -85,23 +85,20 @@ An intelligent trading bot built with Python and Tkinter that implements a Marti
 - Drawdown: 5%
 - Orders placed at: $95, $90, $85, $80, $75
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 martingale_trading_bot/
 ├── bot.py                  # Main application file
 ├── config.py               # API configuration (create from example)
-├── config.example.py       # Template for config file
 ├── equities.json           # Persistent storage for tracked equities
 ├── requirements.txt        # Python dependencies
 ├── README.md              # This file
-├── LICENSE                # MIT License
-├── SECURITY.md            # Security best practices
 ├── alpaca.ipynb           # Jupyter notebook for Alpaca API testing
 └── openai.ipynb           # Jupyter notebook for OpenAI integration testing
 ```
 
-## ⚙️ Configuration Options
+## Configuration Options
 
 ### Equity Parameters
 - **Symbol**: Stock ticker (e.g., TSLA, MSFT, AAPL)
@@ -113,48 +110,22 @@ martingale_trading_bot/
 - **Order Type**: Limit orders for DCA levels
 - **Time in Force**: GTC (Good Till Canceled)
 
-## 🛡️ Security Warnings
+## Security Warnings
 
-⚠️ **NEVER commit your `config.py` file with real API keys to GitHub!**
+**NEVER commit your `config.py` file with real API keys to GitHub!**
 
 - API keys are in `.gitignore` by default
 - Use environment variables for production
 - Rotate keys if accidentally exposed
-- See `SECURITY.md` for more details
 
-## 🧪 Testing with Notebooks
+## Testing with Notebooks
 
-Two Jupyter notebooks are included for testing:
+Two Jupyter notebooks are included for testing, but not visible as per .gitignore:
 
 - **alpaca.ipynb**: Test Alpaca API connections and order placement
 - **openai.ipynb**: Test OpenAI integration and prompt engineering
 
-## 📝 License
+## Disclaimer
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This software is for educational purposes only. Trading cryptocurrencies and stocks involves risk. Always test with paper trading first. The authors are not responsible for any financial losses incurred through the use of this software.t
 
-## ⚠️ Disclaimer
-
-This software is for educational purposes only. Trading cryptocurrencies and stocks involves risk. Always test with paper trading first. The authors are not responsible for any financial losses incurred through the use of this software.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📧 Contact
-
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-
-Project Link: [https://github.com/yourusername/martingale_trading_bot](https://github.com/yourusername/martingale_trading_bot)
-
-## 🙏 Acknowledgments
-
-- [Alpaca Markets](https://alpaca.markets/) for the trading API
-- [OpenAI](https://openai.com/) for the AI assistant capabilities
-- Python Tkinter community for GUI examples and support
